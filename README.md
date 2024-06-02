@@ -67,3 +67,23 @@ with torch.no_grad():
         z = model(img, text)
         print(z.shape) # torch.Size([512, 768])
 ```
+
+### Acknowledgements
+Thanks to the TPU Research Cloud program for providing resources. Models are trained on the TPU v4-64 or TPU v4-32 pod slice.
+
+```
+@article{geng2022multimodal,
+  title={Multimodal Masked Autoencoders Learn Transferable Representations},
+  author={Geng, Xinyang and Liu, Hao and Lee, Lisa and Schuurams, Dale and Levine, Sergey and Abbeel, Pieter},
+  journal={arXiv preprint arXiv:2205.14204},
+  year={2022}
+}
+
+@inproceedings{he2022masked,
+  title={Masked autoencoders are scalable vision learners},
+  author={He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll{\'a}r, Piotr and Girshick, Ross},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={16000--16009},
+  year={2022}
+}
+```
